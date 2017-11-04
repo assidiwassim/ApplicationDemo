@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Sign up
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" #Username ></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" #Password></ion-input>
+      </ion-item>
+      <div padding>
+        <button ion-button (tap)="Signup()" full color="primary" block > Sign up</button>
+      </div>
+      
+    
+    </ion-list>
+
+</ion-content>

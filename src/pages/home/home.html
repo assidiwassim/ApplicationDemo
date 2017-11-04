@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button  ion-button >
+          <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full (tap)="contactMe()" > contact me </button>
+  <br/>
+  <button ion-button full (tap)="popMe()" > pop me </button>
+  <hr/>
+  <ion-list>
+    <ion-item-sliding>
+    <ion-item>Angola</ion-item>
+    <ion-item-options side="right">
+      <button ion-button icon-only color="light"> 
+        <ion-icon color="danger" name="trash">
+          </ion-icon>
+        </button>
+    </ion-item-options>
+  </ion-item-sliding>
+    <ion-item>Argentina</ion-item>
+  </ion-list>
+</ion-content>
